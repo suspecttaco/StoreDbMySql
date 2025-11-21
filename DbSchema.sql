@@ -63,11 +63,7 @@ CREATE TABLE stock_alerts (
     INDEX resolved_idx (resolved)
 ) ENGINE = InnoDB;
 
-INSERT INTO users (username, password, full_name, role)
-VALUES ('admin', 'admin123', 'Administrador Principal', 'admin'),
-       ('cajero1', 'cajero123', 'Juan Campos', 'cashier');
-
 INSERT INTO products (code, name, description, buy_price, sell_price, actual_stock, minimum_stock)
-VALUES ('7501055301904', 'Coca Cola 600ml', 'Refresco de cola 600ml', 8.50, 15.00, 50, 10),
-       ('7501030401020', 'Sabritas Originales', 'Papas 45g', 10.00, 18.00, 35, 10),
-       ('7501000123456', 'Tortillas 1kg', 'Tortillas de maíz', 15.00, 22.00, 20, 5);
+VALUES ('COCA400', 'Coca Cola 400ml', 'Refresco de cola 400ml', 8.50, 15.00, 50, 10),
+       ('SAB45', 'Sabritas Originales', 'Papas 45g', 10.00, 18.00, 35, 10),
+       ('TORT1', 'Tortillas 1kg', 'Tortillas de maíz', 15.00, 22.00, 20, 5);
